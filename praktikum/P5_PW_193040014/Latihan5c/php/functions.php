@@ -2,12 +2,10 @@
 // function untuk melakukan koneksi ke database
 function koneksi()
 {
-    $conn = mysqli_connect("localhost", "root", "") or die("koneksi ke DB gagal");
+    $conn = mysqli_connect("localhost", "root", "") or die("Koneksi ke DB gagal");
     mysqli_select_db($conn, "pw_193040014") or die("Database salah!");
-
     return $conn;
 }
-
 // function untuk melakukan query ke database
 function query($sql)
 {
@@ -18,6 +16,7 @@ function query($sql)
     while ($row = mysqli_fetch_assoc($result)) {
         $rows[] = $row;
     }
+
 
     return $rows;
 }

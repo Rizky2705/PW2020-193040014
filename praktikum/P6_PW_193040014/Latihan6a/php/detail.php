@@ -25,12 +25,14 @@ $alat = query("SELECT * FROM tubes_193040014 WHERE Nomor = $id")[0];
 </head>
 
 <body>
+
+
     <div class="container">
         <div class="bg_display">
-            <img src="../assets/img/<?= $alat['Nomor']; ?>" alt="">
+            <img src="../assets/img/<?= $alat['Gambar']; ?>" alt="">
         </div>
         <div>
-            <p><img src="../assets/img/<?= $alat["Gambar"]; ?>"></p>
+
             <p><?= $alat['Nama_alat_musik']; ?></p>
             <p><?= $alat['Asal_daerah']; ?></p>
             <p><?= $alat['Cara_main']; ?></p>
