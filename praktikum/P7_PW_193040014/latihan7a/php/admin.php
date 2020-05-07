@@ -25,12 +25,17 @@ if (isset($_GET['cari'])) {
 </head>
 
 <body>
-  <div class="add">
-    <a href="tambah.php">Tambah data</a>
+  <h2>Selamat Datang Admin Kita Tercinta</h2>
+  <div>
+    <button class="button button1"><a href="tambah.php">Tambah data</a></button>
   </div>
-  <form action="" method="GET">
-    <input type="text" name="keyword" autofocus placeholder="Search">
-    <button type="submit" name="cari">Cari!!</button>
+
+  <button class="button button2">
+    <form action="" method="GET">
+      <input type="text" name="keyword" autofocus placeholder="Search">
+      <button type="submit" name="cari">Cari!!</button>
+    </form>
+  </button>
 
   </form>
 

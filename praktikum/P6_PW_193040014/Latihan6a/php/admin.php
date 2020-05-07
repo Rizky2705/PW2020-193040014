@@ -21,6 +21,7 @@ $alat = query("SELECT * FROM tubes_193040014");
 
     <tr>
       <th>#</th>
+      <th>Opsi</th>
       <th>Gambar</th>
       <th>Nama alat musik</th>
       <th>Asal Daerah</th>
@@ -39,7 +40,7 @@ $alat = query("SELECT * FROM tubes_193040014");
         <td><?= $musik['Nama_alat_musik']; ?></td>
         <td><?= $musik['Asal_daerah']; ?></td>
         <td><?= $musik['Cara_main']; ?></td>
-        <td><?= $musik['Bahan_pembuatan']; ?></td>
+        <td><?= $musik['bahan_pembuatan']; ?></td>
       </tr>
       <?php $i++; ?>
     <?php endforeach; ?>
