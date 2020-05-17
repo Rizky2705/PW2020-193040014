@@ -25,7 +25,7 @@ function query($sql)
         $nama = htmlspecialchars($data['Nama_alat_musik']);
         $asalDaerah = htmlspecialchars($data['Asal_daerah']);
         $caraMain = htmlspecialchars($data['Cara_main']);
-        $bahanPembuatan = htmlspecialchars($data['Bahan_pembuatan']);
+        $bahanPembuatan = htmlspecialchars($data['bahan_pembuatan']);
 
         $query = "INSERT INTO tubes_193040014
                     VALUES
@@ -50,7 +50,7 @@ function ubah($data)
     $nama = htmlspecialchars($data['Nama_alat_musik']);
     $asalDaerah = htmlspecialchars($data['Asal_daerah']);
     $caraMain = htmlspecialchars($data['Cara_main']);
-    $bahanPembuatan = htmlspecialchars($data['Bahan_pembuatan']);
+    $bahanPembuatan = htmlspecialchars($data['bahan_pembuatan']);
 
     $query = "UPDATE tubes_193040014
                 SET
@@ -76,8 +76,8 @@ function registrasi($data)
     $result = mysqli_query($conn, "SELECT username FROM user WHERE username = '$username'");
     if (mysqli_fetch_assoc($result)) {
         echo "<script>
-                alert('username sudah digunakan');
-            </script>";
+    alert('username sudah digunakan');
+    </script>";
         return false;
     }
     // enkripsi password

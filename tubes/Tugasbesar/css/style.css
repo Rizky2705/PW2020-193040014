@@ -1,0 +1,100 @@
+body {
+  min-height: 400px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  
+  background-color: white; 
+  color: black; 
+}
+
+.button2 {
+  background-color: #008CBA;
+  color: white;
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+ 
+  background-color: white; 
+  color: black; 
+}
+
+h1{
+  font-family: algerian;
+  text-align : center;
+  color: red;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 20s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+
+.container {
+  margin: 5px auto 100px;
+  width: auto;
+  text-align: center;
+
+}
+
+.container table{
+  margin: 0 auto 0 auto;
+  width: 30%;
+  height: auto;
+}
+
+
+th, td {
+  border-bottom: 2px solid #ddd;
+  text-align: center;
+  color: white;
+  background-color: grey;
+}
+
+th, td :hover{
+  background-color: white;
+  color: black;
+}
+
+img{
+width: 140px;
+height: 230px;
+}
