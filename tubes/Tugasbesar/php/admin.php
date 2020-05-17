@@ -56,7 +56,7 @@ if (isset($_GET['cari'])) {
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="logout.php">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link active" href="tambah.php">Tambah data</a>
+        <a class="nav-link active" href="tambah.php">Tambah data</a>
         <form class="form-inline" method="GET">
           <input class="form-control mr-sm-2" type="text" name="keyword" autofocus placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="cari">Search</button>
@@ -90,10 +90,10 @@ if (isset($_GET['cari'])) {
         <tr>
           <td><?= $i; ?></td>
           <td>
-            <a href="ubah.php?Nomor=<?= $musik['Nommor'] ?>"><button>Ubah</button></a>
+            <a href="ubah.php?Nomor=<?= $musik['Nomor']; ?>"><button>Ubah</button></a>
           </td>
           <td>
-            <a href="hapus.php?Nomor=<? $musik['Nomor'] ?> onlick " return confirm('Hapus Data??')"><button>Hapus</button></a>
+            <a href="hapus.php?Nomor=<? $musik['Nomor']; ?> onlick " return confirm('Hapus Data??')"><button>Hapus</button></a>
           </td>
           <td><img src="../assets/img/<?= $musik['Gambar']; ?> "></td>
           <td><?= $musik['Nama_alat_musik']; ?></td>

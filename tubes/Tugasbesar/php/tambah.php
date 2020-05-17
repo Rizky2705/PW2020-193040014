@@ -38,35 +38,44 @@ document.location.href = 'admin.php';
   <form action="" method="POST">
 
   </form>
-  <ul>
-    <li>
-      <label for="gambar">Gambar :</label>
-      <input type="text" name="gambar" id="Gambar" required><br><br>
-    </li>
-    <li>
-      <label for="gambar">Nama alat musik :</label>
-      <input type="text" name="Nama" id="Nama_alat_musik" required><br><br>
-    </li>
-    <li>
-      <label for="gambar">Asal alat musik :</label>
-      <input type="text" name="gambar" id="Asal_daerah" required><br><br>
-    </li>
-    <li>
-      <label for="gambar">Cara memainkan :</label>
-      <input type="text" name="gambar" id="Cara_main" required><br><br>
-    </li>
-    <li>
-      <label for="gambar">Bahan pembuatan :</label>
-      <input type="text" name="gambar" id="Bahan_pemuatan" required><br><br>
-    </li>
-    <br>
-    <button type="submit" name="tambah">Tambah Data!</button>
-    <button type="submit">
-      <a href="index.php" style="text-decoration: none; color:black">Kembali</a>
-    </button>
+  <table border="2" cellspacing="2" cellpading="3">
+    <ul>
+      <tr>
+        <td><label for="gambar">Gambar :</label></td>
+        <td><input type="text" name="gambar" id="Gambar" required><br><br></td>
+      </tr>
 
-  </ul>
+      <tr>
+        <td><label for="gambar">Nama alat musik :</label></td>
+        <td><input type="text" name="Nama" id="Nama_alat_musik" required><br><br></td>
+      </tr>
 
+      <tr>
+        <td><label for="gambar">Asal alat musik :</label></td>
+        <td><input type="text" name="gambar" id="Asal_daerah" required><br><br></td>
+      </tr>
+
+      <tr>
+        <td><label for="gambar">Cara memainkan :</label></td>
+        <td><input type="text" name="gambar" id="Cara_main" required><br><br></td>
+      </tr>
+
+      <tr>
+        <td><label for="gambar">Bahan pembuatan :</label></td>
+        <td><input type="text" name="gambar" id="Bahan_pemuatan" required><br><br></td>
+        <br>
+      </tr>
+
+      <tr>
+        <td colspan="2"><button type="submit" name="tambah">Tambah Data!</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="submit">
+            <a href="index.php" style="text-decoration: none; color:black">Kembali</a>
+          </button></td>
+      </tr>
+
+  </table>
 
 </body>
 

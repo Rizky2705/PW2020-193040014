@@ -42,34 +42,37 @@ document.location.href = 'admin.php';
   <form action="" method="POST">
     <input type="hidden" name="id" id="id" value="<?= $musik['Nomor']; ?>">
 
-    <ul>
-      <li>
-        <label for="gambar">Gambar :</label>
-        <input type="text" name="gambar" id="Gambar" required value="<?= $musik['Gambar']; ?>"><br><br>
-      </li>
-      <li>
-        <label for="gambar">Nama alat musik :</label>
-        <input type="text" name="Nama" id="Nama_alat_musik" required value="<?= $musik['Nama_alat_musik']; ?>><br><br>
-    </li>
-    <li>
-      <label for=" gambar">Asal alat musik :</label>
-        <input type="text" name="asal" id="Asal_daerah" required value="<?= $musik['Asal_daerah']; ?>><br><br>
-    </li>
-    <li>
-      <label for=" gambar">Cara memainkan :</label>
-        <input type="text" name="cara_main" id="Cara_main" required value="<?= $musik['Cara_main']; ?>><br><br>
-    </li>
-    <li>
-      <label for=" gambar">Bahan pembuatan :</label>
-        <input type="text" name="bahan" id="Bahan_pembuatan" required value="<?= $musik['Bahan_pembuatan']; ?>><br><br>
-    </li>
-    <br>
-    <button type=" submit" name="ubah">Ubah Data!</button>
-        <button type="submit">
-          <a href="index.php" style="text-decoration: none; color:black">Kembali</a>
-        </button>
+    <table>
 
-    </ul>
+      <tr>
+        <td><label for="gambar">Gambar :</label></td>
+        <td><input type="text" name="gambar" id="Gambar" required value="<?= $musik['Gambar']; ?>"><br><br></td>
+      </tr>
+      <tr>
+        <td><label for="gambar">Nama alat musik :</label></td>
+        <td><input type="text" name="Nama" id="Nama_alat_musik" required value="<?= $musik['Nama_alat_musik']; ?>"><br><br></td>
+      </tr>
+      <tr>
+        <td><label for=" gambar">Asal alat musik :</label></td>
+        <td><input type="text" name="asal" id="Asal_daerah" required value="<?= $musik['Asal_daerah']; ?>"><br><br></td>
+      </tr>
+      <tr>
+        <td><label for=" gambar">Cara memainkan :</label></td>
+        <td><input type="text" name="cara_main" id="Cara_main" required value="<?= $musik['Cara_main']; ?>"><br><br></td>
+      </tr>
+      <tr>
+        <td><label for=" gambar">Bahan pembuatan :</label></td>
+        <td><input type="text" name="bahan" id="Bahan_pembuatan" required value="<?= $musik['Bahan_pembuatan']; ?>"><br><br></td>
+      </tr>
+      <tr>
+        <td><button type=" submit" name="ubah">Ubah Data!</button></td>
+      </tr>
+      <tr>
+        <td><button type="submit">
+            <a href="index.php" style="text-decoration: none; color:black">Kembali</a>
+          </button></td>
+      </tr>
+    </table>
   </form>
 
 </body>
