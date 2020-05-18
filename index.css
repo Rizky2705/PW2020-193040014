@@ -1,0 +1,68 @@
+body{
+	font:14px/18px arial,sans-serif;
+}
+
+table{
+border: 5px solid black;
+background-color: lightgray;
+
+}
+
+h1{
+  font-family: algerian;
+  text-align : center;
+  color: red;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 20s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+.container{
+	text-align: center;
+	margin: 5px auto 100px;
+  width: auto;
+}
+
+.container table{
+  margin: 0 auto 0 auto;
+  width: 30%;
+  height: auto;
+}
+
+th, td{
+	text-align: center;
+}
+
+th{
+	background-color: rgb(64, 190, 64);
+}
+
+
+.warna1{
+	background-color: lightblue;
+}
+
+.warna2{
+	background-color: lightgoldenrodyellow;
+}
+
+.warna3{
+	background-color: salmon;
+}
