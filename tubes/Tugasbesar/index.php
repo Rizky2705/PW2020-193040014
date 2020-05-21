@@ -88,6 +88,75 @@ if (isset($_GET['cari'])) {
       <?php endif; ?>
     </table>
 
+    <section id="contact" class="contact mb-5">
+      <div class="container">
+        <div class="row pt-4 mt-4">
+          <div class="col text-center">
+            <h2>Contact Us</h2>
+          </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="card text-white bg-dark mb-3 text-center">
+              <div class="card-body">
+                <h5 class="card-title">Contact Us</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              </div>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <h2>Location</h2>
+              </li>
+              <li class="list-group-item">My Office</li>
+              <li class="list-group-item">Jl.Cikopak</li>
+              <li class="list-group-item">West Java, Indonesia</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6">
+            <form>
+              <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" class="form-control" id="nama">
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="text" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="telp">No Telp</label>
+                <input type="text" class="form-control" id="telp">
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <textarea name="pesan" id="pesan" class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-dark">Kirim pesan</button>
+              </div>
+            </form>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <footer class="bg-dark text-white">
+      <div class="container">
+        <div class="row pt-3">
+          <div class="col text-center">
+            <p>Copyright 2018.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
 
   </div>
   <!-- Optional JavaScript -->

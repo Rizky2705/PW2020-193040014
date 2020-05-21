@@ -2,8 +2,8 @@
 // function untuk melakukan koneksi ke database
 function koneksi()
 {
-    $conn = mysqli_connect("localhost", "root", "") or die("Koneksi ke DB gagal");
-    mysqli_select_db($conn, "pw_193040014") or die("Database salah!");
+    $conn = mysqli_connect("localhost", "pw19014", "#Akun#193040014#") or die("Koneksi ke DB gagal");
+    mysqli_select_db($conn, "pw19014_pw_193040014") or die("Database salah!");
     return $conn;
 }
 // function untuk melakukan query ke database
@@ -29,7 +29,7 @@ function query($sql)
 
         $query = "INSERT INTO tubes_193040014
                     VALUES
-                    ('', '$gambar', '$nama', '$asalDaerah', '$caraMain', '$bahanPembuatan')";
+                    (null, '$gambar', '$nama', '$asalDaerah', '$caraMain', '$bahanPembuatan')";
         mysqli_query($conn, $query);
 
         return mysqli_affected_rows($conn);
@@ -84,7 +84,7 @@ function registrasi($data)
     $password = password_hash($password, PASSWORD_DEFAULT);
 
     // tambah user baru
-    $query_tambah = "INSERT INTO user VALUES('', '$username', '$password')";
+    $query_tambah = "INSERT INTO user VALUES(null, '$username', '$password')";
     mysqli_query($conn, $query_tambah);
 
     return mysqli_affected_rows($conn);
